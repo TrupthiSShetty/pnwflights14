@@ -7,12 +7,12 @@ if (!file.exists("data-raw/airports.dat")) {
   )
 }
 
-raw <- read.csv("data-raw/airports.dat", 
-  header = FALSE, 
+raw <- read.csv("data-raw/airports.dat",
+  header = FALSE,
   stringsAsFactors = FALSE)
 names(raw) <- c("id", "name", "city", "country", "faa", "icao", "lat", "lon", "alt", "tz", "dst")
 
-airports <- raw %>% 
+airports <- raw %>%
   tbl_df() %>%
   filter(country == "United States", faa != "") %>%
   select(faa, name, lat, lon, alt, tz, dst) %>%
@@ -21,3 +21,6 @@ airports <- raw %>%
 
 write.csv(airports, "data-raw/airports.csv", row.names = FALSE)
 save(airports, file = "data/airports.rda")
+
+# Save to RDS file
+saveRDS(airports, "data/airports.RDS")

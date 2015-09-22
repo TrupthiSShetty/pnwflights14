@@ -62,3 +62,9 @@ planes <- all %>%
   arrange(tailnum)
 
 save(planes, file = "data/planes.rda")
+
+# Save to RDS file
+saveRDS(planes, "data/planes.RDS")
+
+# Export to CSV
+write.csv(planes, "data/planes.csv", row.names = FALSE)
