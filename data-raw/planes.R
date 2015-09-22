@@ -1,8 +1,11 @@
 library(dplyr)
 
-src <- "http://registry.faa.gov/database/AR062014.zip"
+# To find current database go to http://registry.faa.gov/database/
+
+src <- "http://registry.faa.gov/database/AR092015.zip"
 lcl <- "data-raw/planes"
 
+# Extracts information from zip file (Files deleted before uploading to GitHub)
 if (!file.exists(lcl)) {
   tmp <- tempfile(fileext = ".zip")
   download.file(src, tmp)

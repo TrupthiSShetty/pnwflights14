@@ -17,3 +17,9 @@ airlines <- raw %>%
   arrange(carrier)
 
 save(airlines, file = "data/airlines.rda")
+
+# Save to RDS file
+saveRDS(airlines, "data/airlines.RDS")
+
+# Export to CSV
+write.csv(airlines, "data/airlines.csv", row.names = FALSE)
