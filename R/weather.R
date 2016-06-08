@@ -1,6 +1,6 @@
 #' Hourly weather data
 #'
-#' Hourly meterological data for LGA, JFK and EWR.
+#' Hourly meterological data for PDX and SEA.
 #'
 #' @source ASOS download from Iowa Environmental Mesonet,
 #'   https://mesonet.agron.iastate.edu/request/download.phtml.
