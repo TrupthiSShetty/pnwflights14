@@ -1,7 +1,7 @@
 #' Flights data
 #'
-#' On-time data for all flights that departed NYC (i.e. JFK, LGA or EWR) in
-#' 2013.
+#' On-time data for all flights that departed the Pacific Northwest (i.e. SEA, PDX) in
+#' 2014.
 #'
 #' @source RITA, Bureau of transportation statistics,
 #'  \url{http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236}
