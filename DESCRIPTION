@@ -7,7 +7,8 @@ Description: Airline on-time data for all flights departing SEA and PDX in 2014.
 License: CC0
 LazyData: true
 Depends:
-  R (>= 2.10)
+    R (>= 2.10)
 Suggests:
     dplyr
 URL: http://github.com/ismayc/pnwflights14
+RoxygenNote: 5.0.1.9000
